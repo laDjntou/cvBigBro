@@ -1,0 +1,515 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doryan Vianey Nana Nkadja | Portfolio des Bauingenieurwesens</title>
+    <meta name="description" content="Professionelles Web-Portfolio von Doryan Vianey Nana Nkadja – Student des Bauingenieurwesens an der htw saar.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <!-- CSS File -->
+    <link rel="stylesheet" href="index.css">
+</head>
+<body class="dark-theme">
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress"></div>
+
+    <!-- Navigation Header -->
+    <header class="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">
+                <span class="logo-icon">DN</span>
+                <span class="logo-text">Doryan<span class="accent-dot">.</span></span>
+            </a>
+            
+            <nav class="nav-menu">
+                <a href="#hero" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">Über mich</a>
+                <a href="#experience" class="nav-link">Erfahrung</a>
+                <a href="#education" class="nav-link">Ausbildung</a>
+                <a href="#skills" class="nav-link">Kompetenzen</a>
+                <a href="#contact" class="nav-link">Kontakt</a>
+            </nav>
+
+            <div class="nav-actions">
+                <button id="theme-toggle" aria-label="Farbschema umschalten">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                </button>
+                <button class="mobile-menu-toggle" aria-label="Menü öffnen">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="hero-bg-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+        </div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <div class="badge glow-border">Bereit für neue Herausforderungen</div>
+                <h1 class="hero-title">
+                    Doryan Vianey <br>
+                    <span class="gradient-text">Nana Nkadja</span>
+                </h1>
+                <p class="hero-subtitle">STUDENT DES BAUINGENIEURWESENS</p>
+                <p class="hero-description">
+                    Engagierter und motivierter Student an der Hochschule der Technik und Wirtschaft des Saarlandes (htw saar) mit fundierten Vorkenntnissen in Architektur, CAD-Zeichnen und Ingenieurinformatik.
+                </p>
+                <div class="hero-ctas">
+                    <a href="#about" class="btn btn-primary">Mehr über mich</a>
+                    <a href="#contact" class="btn btn-secondary">Kontakt aufnehmen</a>
+                </div>
+            </div>
+            
+            <div class="hero-visual">
+                <div class="visual-card glow-border">
+                    <div class="blueprint-grid"></div>
+                    <div class="geometry-shape circle"></div>
+                    <div class="geometry-shape triangle"></div>
+                    <div class="geometry-shape line line-1"></div>
+                    <div class="geometry-shape line line-2"></div>
+                    <div class="visual-content">
+                        <div class="project-tag">HTW Saar</div>
+                        <div class="project-title">Bauingenieurwesen</div>
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-value">Revit</span>
+                                <span class="stat-label">3D CAD</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-value">C1</span>
+                                <span class="stat-label">Deutsch</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Hintergrund</span>
+                <h2 class="section-title">Über mich</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="about-grid">
+                <div class="personal-info-card glass-card glow-border">
+                    <h3>Steckbrief</h3>
+                    <ul class="info-list">
+                        <li>
+                            <span class="info-label">Name</span>
+                            <span class="info-value">Doryan Vianey Nana Nkadja</span>
+                        </li>
+                        <li>
+                            <span class="info-label">Geburtsdatum</span>
+                            <span class="info-value">11.05.2002</span>
+                        </li>
+                        <li>
+                            <span class="info-label">Geburtsort</span>
+                            <span class="info-value">Douala</span>
+                        </li>
+                        <li>
+                            <span class="info-label">Nationalität</span>
+                            <span class="info-value">Kamerunisch</span>
+                        </li>
+                        <li>
+                            <span class="info-label">Familienstand</span>
+                            <span class="info-value">Ledig</span>
+                        </li>
+                        <li>
+                            <span class="info-label">Wohnort</span>
+                            <span class="info-value">66125 Saarbrücken</span>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="about-text-content">
+                    <p class="lead-text">
+                        Als leidenschaftlicher und zielstrebiger angehender Bauingenieur strebe ich danach, die bauliche Zukunft mitzugestalten.
+                    </p>
+                    <p>
+                        Mit einer fundierten akademischen Basis, die von der <strong>Architektur</strong> über die <strong>Ingenieurinformatik</strong> bis hin zum <strong>Bauingenieurwesen</strong> reicht, verfüge ich über ein breit gefächertes interdisziplinäres Verständnis. Ich verstehe Pläne nicht nur mathematisch, sondern auch gestalterisch und technisch.
+                    </p>
+                    <p>
+                        Besonders zeichne ich mich durch mein hohes Organisationstalent und meine Teamfähigkeit aus. Ich bin es gewohnt, präzise und zuverlässig zu arbeiten – sei es in akademischen Projekten oder bei praktischen Tätigkeiten im Service und Handel.
+                    </p>
+                    
+                    <div class="strengths-row">
+                        <div class="strength-card">
+                            <div class="strength-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="m9 12 2 2 4-4"/></svg>
+                            </div>
+                            <h4>Organisation</h4>
+                            <p>Strukturierte Arbeitsweise und Zeitmanagement.</p>
+                        </div>
+                        <div class="strength-card">
+                            <div class="strength-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                            </div>
+                            <h4>Teamfähigkeit</h4>
+                            <p>Gemeinsam Lösungen erarbeiten und anwenden.</p>
+                        </div>
+                        <div class="strength-card">
+                            <div class="strength-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+                            </div>
+                            <h4>Lernbereitschaft</h4>
+                            <p>Schnelle Einarbeitung in CAD- und Zeichensoftware.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Praxis</span>
+                <h2 class="section-title">Berufserfahrung</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="timeline">
+                <!-- Timeline Line -->
+                <div class="timeline-line"></div>
+                
+                <!-- Entry 1 -->
+                <div class="timeline-item left scroll-reveal">
+                    <div class="timeline-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2" ry="2"/><path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"/></svg>
+                    </div>
+                    <div class="timeline-content glass-card glow-border">
+                        <span class="timeline-date">Seit Oktober 2023</span>
+                        <h3>Service-Mitarbeiter</h3>
+                        <h4 class="company">Alexander Kunz Theater, Saarbrücken</h4>
+                        <p class="job-desc">
+                            Zuständig für Service- und Serviertätigkeiten bei Kultur- und Dinner-Events, Gästebetreuung, sowie Koordination im Service-Team. Stärkung von Stressresistenz und Kommunikationsfähigkeit im direkten Kundenkontakt.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Entry 2 -->
+                <div class="timeline-item right scroll-reveal">
+                    <div class="timeline-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z"/></svg>
+                    </div>
+                    <div class="timeline-content glass-card glow-border">
+                        <span class="timeline-date">September 2023</span>
+                        <h3>Kommissionierer</h3>
+                        <h4 class="company">REWE Group, Hannover</h4>
+                        <p class="job-desc">
+                            Präzises Kommissionieren und Verpacken von Warenbestellungen nach Vorgabe, logistische Vorbereitung des Warenflusses. Förderung der körperlichen Belastbarkeit und effizienten Arbeitsorganisation unter Zeiteinhaltung.
+                        </p>
+                    </div>
+                </div>
+
+                <!-- Entry 3 -->
+                <div class="timeline-item left scroll-reveal">
+                    <div class="timeline-badge">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/></svg>
+                    </div>
+                    <div class="timeline-content glass-card glow-border">
+                        <span class="timeline-date">Februar 2023 – September 2023</span>
+                        <h3>Aushilfe in der Warenverräumung</h3>
+                        <h4 class="company">Rewe Christophe Daguerre oHG, Hannover</h4>
+                        <p class="job-desc">
+                            Regelmäßige Warenverräumung, Bestandskontrolle, Warenpräsentation nach Standards, Durchführung von Haltbarkeitskontrollen und Auskunftserteilung an Kunden. Schulung von Zuverlässigkeit und präzisem Arbeiten.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="education-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Bildungsweg</span>
+                <h2 class="section-title">Ausbildung</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="education-grid">
+                <!-- Ed 1 -->
+                <div class="education-card glass-card glow-border scroll-reveal">
+                    <div class="edu-header">
+                        <span class="edu-date">Seit 10/2024</span>
+                        <span class="edu-status status-active">Laufend</span>
+                    </div>
+                    <h3>Bachelor of Engineering (B.Eng.) Bauingenieurwesen</h3>
+                    <h4 class="school">Hochschule der Technik und Wirtschaft des Saarlandes (htw saar), Saarbrücken</h4>
+                    <p class="edu-details">
+                        Aktueller Studienschwerpunkt mit Fokus auf Statik, Konstruktionslehre, Baustoffkunde und CAD-gestütztes Zeichnen (Revit).
+                    </p>
+                </div>
+
+                <!-- Ed 2 -->
+                <div class="education-card glass-card glow-border scroll-reveal">
+                    <div class="edu-header">
+                        <span class="edu-date">10/2023 – 09/2024</span>
+                        <span class="edu-status">Studiengangwechsel</span>
+                    </div>
+                    <h3>Bachelor-Studium Architektur</h3>
+                    <h4 class="school">Hochschule der Technik und Wirtschaft des Saarlandes (htw saar), Saarbrücken</h4>
+                    <p class="edu-details">
+                        Erlangung gestalterischer und geometrischer Kompetenzen, Freihandzeichnen, Verständnis von Bauformenlehre und Entwurfsplanung.
+                    </p>
+                </div>
+
+                <!-- Ed 3 -->
+                <div class="education-card glass-card glow-border scroll-reveal">
+                    <div class="edu-header">
+                        <span class="edu-date">09/2022 – 09/2023</span>
+                        <span class="edu-status">Studiengangwechsel</span>
+                    </div>
+                    <h3>Bachelor-Studium Ingenieurinformatik Maschinenbau</h3>
+                    <h4 class="school">Hochschule Hannover</h4>
+                    <p class="edu-details">
+                        Aufbau eines fundamentalen ingenieurwissenschaftlichen sowie IT-technischen Grundwissens, Programmiergrundlagen und technisches Zeichnen.
+                    </p>
+                </div>
+
+                <!-- Ed 4 -->
+                <div class="education-card glass-card glow-border scroll-reveal">
+                    <div class="edu-header">
+                        <span class="edu-date">04/2022 – 07/2022</span>
+                        <span class="edu-status">Abschluss</span>
+                    </div>
+                    <h3>Deutschkurs (Deutsch als Fremdsprache)</h3>
+                    <h4 class="school">Hochschule Darmstadt</h4>
+                    <p class="edu-details">
+                        Intensives Deutschlernen zur Vorbereitung auf ein wissenschaftliches Studium in Deutschland, erfolgreich abgeschlossen (C1 Niveau).
+                    </p>
+                </div>
+
+                <!-- Ed 5 -->
+                <div class="education-card glass-card glow-border scroll-reveal">
+                    <div class="edu-header">
+                        <span class="edu-date">10/2019 – 06/2020</span>
+                        <span class="edu-status">Abschluss</span>
+                    </div>
+                    <h3>Studium der Tierbiologie</h3>
+                    <h4 class="school">Universität Douala (Kamerun)</h4>
+                    <p class="edu-details">
+                        Naturwissenschaftliches Studium mit Schwerpunkt in Biologie, Datenerhebung und Laborarbeitsgrundlagen.
+                    </p>
+                </div>
+
+                <!-- Ed 6 -->
+                <div class="education-card glass-card glow-border scroll-reveal">
+                    <div class="edu-header">
+                        <span class="edu-date">09/2011 – 07/2019</span>
+                        <span class="edu-status">Abschluss</span>
+                    </div>
+                    <h3>Abitur (Allgemeine Hochschulreife)</h3>
+                    <h4 class="school">Lycée Joss de Douala (Kamerun)</h4>
+                    <p class="edu-details">
+                        Gymnasiale Schulausbildung mit naturwissenschaftlichem Schwerpunkt. Bestanden mit gutem Gesamtergebnis.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills & Languages Section -->
+    <section id="skills" class="skills-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Fähigkeiten</span>
+                <h2 class="section-title">Kompetenzen & Sprachen</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="skills-grid">
+                <!-- Hard Skills & Software -->
+                <div class="skills-container glass-card glow-border scroll-reveal">
+                    <h3>Fachliche Kompetenzen</h3>
+                    <div class="skills-list">
+                        <!-- Skill 1 -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Revit & CAD-Software (Bauingenieurwesen)</span>
+                                <span class="skill-percentage">75%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-fill" style="width: 75%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill 2 -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Microsoft Office (Word, Excel)</span>
+                                <span class="skill-percentage">90%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill 3 -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Zehnfingersystem (10-Finger-Schreiben)</span>
+                                <span class="skill-percentage">85%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-fill" style="width: 85%;"></div>
+                            </div>
+                        </div>
+
+                        <!-- Skill 4 -->
+                        <div class="skill-item">
+                            <div class="skill-info">
+                                <span class="skill-name">Kassiertätigkeit & Kassenführung</span>
+                                <span class="skill-percentage">80%</span>
+                            </div>
+                            <div class="skill-bar-wrapper">
+                                <div class="skill-bar-fill" style="width: 80%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Languages & Levels -->
+                <div class="languages-container glass-card glow-border scroll-reveal">
+                    <h3>Sprachkenntnisse</h3>
+                    <div class="languages-list">
+                        <!-- Lang 1 -->
+                        <div class="language-card">
+                            <div class="lang-circular-progress" data-percent="100">
+                                <div class="circle-inner">C2</div>
+                            </div>
+                            <div class="lang-info">
+                                <h4>Französisch</h4>
+                                <p>Muttersprache / Exzellent</p>
+                            </div>
+                        </div>
+
+                        <!-- Lang 2 -->
+                        <div class="language-card">
+                            <div class="lang-circular-progress" data-percent="85">
+                                <div class="circle-inner">C1</div>
+                            </div>
+                            <div class="lang-info">
+                                <h4>Deutsch</h4>
+                                <p>Verhandlungssicher / C1 Niveau</p>
+                            </div>
+                        </div>
+
+                        <!-- Lang 3 -->
+                        <div class="language-card">
+                            <div class="lang-circular-progress" data-percent="60">
+                                <div class="circle-inner">B1</div>
+                            </div>
+                            <div class="lang-info">
+                                <h4>Englisch</h4>
+                                <p>Gute Kenntnisse / B1 Niveau</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Kontakt</span>
+                <h2 class="section-title">Treten wir in Kontakt</h2>
+                <div class="title-underline"></div>
+            </div>
+
+            <div class="contact-grid">
+                <!-- Info Cards -->
+                <div class="contact-info">
+                    <div class="contact-card glass-card glow-border scroll-reveal">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Telefon</h4>
+                            <p><a href="tel:+491777804239" class="hover-link">+49 177 7804239</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card glass-card glow-border scroll-reveal">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m22 2-7 20-4-9-9-4Z"/><path d="M22 2 11 13"/></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>E-Mail</h4>
+                            <p><a href="mailto:nkadjaladjantou@gmail.com" class="hover-link">nkadjaladjantou@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="contact-card glass-card glow-border scroll-reveal">
+                        <div class="contact-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Adresse</h4>
+                            <p>66125 Saarbrücken, Deutschland</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Form -->
+                <div class="contact-form-container glass-card glow-border scroll-reveal">
+                    <h3>Nachricht senden</h3>
+                    <form id="contact-form" action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Ihr Name</label>
+                            <input type="text" id="name" name="name" placeholder="Max Mustermann" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Ihre E-Mail</label>
+                            <input type="email" id="email" name="email" placeholder="max@beispiel.de" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Nachricht</label>
+                            <textarea id="message" name="message" rows="5" placeholder="Guten Tag Herr Nana Nkadja..." required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-block">Absenden</button>
+                    </form>
+                    <div id="form-feedback" class="form-feedback"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <p class="copyright">&copy; 2026 Doryan Vianey Nana Nkadja. Alle Rechte vorbehalten.</p>
+            <div class="footer-links">
+                <a href="#hero" class="footer-link">Home</a>
+                <a href="#about" class="footer-link">Über mich</a>
+                <a href="#contact" class="footer-link">Kontakt</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript File -->
+    <script src="index.js"></script>
+</body>
+</html>
