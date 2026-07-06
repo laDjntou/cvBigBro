@@ -682,6 +682,27 @@ section {
     align-items: flex-start;
 }
 
+.profile-image-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.profile-image {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 3px solid var(--accent-indigo);
+    box-shadow: 0 0 25px var(--accent-glow);
+    transition: transform var(--transition-fast), border-color var(--transition-fast);
+}
+
+.profile-image:hover {
+    transform: scale(1.05);
+    border-color: var(--accent-cyan);
+}
+
 .personal-info-card h3 {
     font-family: var(--font-heading);
     font-size: 1.5rem;
