@@ -292,24 +292,6 @@ document.addEventListener('DOMContentLoaded', () => {
             contactCards[2].querySelector('h4').textContent = isDe ? 'Adresse' : 'Address';
         }
 
-        // Contact Form
-        const formContainer = document.querySelector('.contact-form-container');
-        if (formContainer) {
-            formContainer.querySelector('h3').textContent = isDe ? 'Nachricht senden' : 'Send Message';
-            formContainer.querySelector('label[for="name"]').textContent = isDe ? 'Ihr Name' : 'Your Name';
-            formContainer.querySelector('label[for="email"]').textContent = isDe ? 'Ihre E-Mail' : 'Your Email';
-            formContainer.querySelector('label[for="message"]').textContent = isDe ? 'Nachricht' : 'Message';
-            formContainer.querySelector('button[type="submit"]').textContent = isDe ? 'Absenden' : 'Submit';
-        }
-        
-        const inputName = document.getElementById('name');
-        if (inputName) inputName.placeholder = isDe ? 'Max Mustermann' : 'e.g. John Doe';
-        
-        const inputEmail = document.getElementById('email');
-        if (inputEmail) inputEmail.placeholder = isDe ? 'max@beispiel.de' : 'e.g. john@example.com';
-        
-        const inputMsg = document.getElementById('message');
-        if (inputMsg) inputMsg.placeholder = isDe ? 'Guten Tag Herr Nana Nkadja...' : 'e.g. Dear Mr. Nana Nkadja...';
         
         // Footer
         const footerCopyright = document.querySelector('.copyright');
@@ -452,69 +434,4 @@ document.addEventListener('DOMContentLoaded', () => {
         revealObserver.observe(element);
     });
 
-    // ==========================================================================
-    // Contact Form Handling (Web3Forms Integration)
-    // ==========================================================================
-    const contactForm = document.getElementById('contact-form');
-    const formFeedback = document.getElementById('form-feedback');
-
-    contactForm.addEventListener('submit', (e) => {
-        e.preventDefault();
-
-        const submitBtn = contactForm.querySelector('button[type="submit"]');
-        const originalBtnText = submitBtn.textContent;
-        
-        // Submission loading state
-        submitBtn.disabled = true;
-        submitBtn.textContent = currentLang === 'de' ? 'Wird gesendet...' : 'Sending...';
-
-        const formData = new FormData(contactForm);
-        const object = Object.fromEntries(formData);
-        const json = JSON.stringify(object);
-
-        fetch('https://api.web3forms.com/submit', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json',
-                'Accept': 'application/json'
-            },
-            body: json
-        })
-        .then(async (response) => {
-            let result = await response.json();
-            if (response.status === 200) {
-                // Success
-                formFeedback.textContent = currentLang === 'de' ? 
-                    'Vielen Dank! Ihre Nachricht wurde erfolgreich gesendet. Doryan wird sich in Kürze bei Ihnen melden.' :
-                    'Thank you! Your message has been sent successfully. Doryan will get back to you shortly.';
-                formFeedback.className = 'form-feedback success';
-                formFeedback.style.display = 'block';
-                contactForm.reset();
-            } else {
-                // API Error
-                console.error(response);
-                formFeedback.textContent = result.message || (currentLang === 'de' ? 'Ein Fehler ist aufgetreten. Bitte versuchen Sie es erneut.' : 'An error occurred. Please try again.');
-                formFeedback.className = 'form-feedback error';
-                formFeedback.style.display = 'block';
-            }
-        })
-        .catch(error => {
-            // Network Error
-            console.error(error);
-            formFeedback.textContent = currentLang === 'de' ? 'Verbindungsfehler. Bitte überprüfen Sie Ihre Internetverbindung.' : 'Connection error. Please check your internet connection.';
-            formFeedback.className = 'form-feedback error';
-            formFeedback.style.display = 'block';
-        })
-        .then(() => {
-            // Restore button state
-            submitBtn.disabled = false;
-            submitBtn.textContent = originalBtnText;
-
-            // Clear feedback after 7 seconds
-            setTimeout(() => {
-                formFeedback.style.display = 'none';
-                formFeedback.className = 'form-feedback';
-            }, 7000);
-        });
-    });
 });

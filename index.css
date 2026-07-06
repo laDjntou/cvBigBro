@@ -1076,14 +1076,8 @@ section {
    ========================================================================== */
 .contact-grid {
     display: grid;
-    grid-template-columns: 0.8fr 1.2fr;
-    gap: 4rem;
-}
-
-.contact-info {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
 }
 
 .contact-card {
@@ -1113,66 +1107,6 @@ section {
 .contact-details p {
     font-size: 0.9375rem;
     color: var(--text-secondary);
-}
-
-.contact-form-container h3 {
-    font-family: var(--font-heading);
-    font-size: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-.form-group {
-    margin-bottom: 1.5rem;
-}
-
-.form-group label {
-    display: block;
-    font-size: 0.8125rem;
-    font-weight: 600;
-    margin-bottom: 0.5rem;
-    text-transform: uppercase;
-    letter-spacing: 0.05em;
-    color: var(--text-muted);
-}
-
-.form-group input, .form-group textarea {
-    width: 100%;
-    padding: 0.875rem 1.25rem;
-    border-radius: 8px;
-    background: var(--input-bg);
-    border: 1px solid var(--card-border);
-    color: var(--text-primary);
-    font-family: inherit;
-    font-size: 0.9375rem;
-    transition: border-color var(--transition-fast), box-shadow var(--transition-fast);
-}
-
-.form-group input:focus, .form-group textarea:focus {
-    outline: none;
-    border-color: var(--accent-indigo);
-    box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.15);
-}
-
-.form-feedback {
-    margin-top: 1.5rem;
-    font-size: 0.875rem;
-    padding: 0.75rem 1.25rem;
-    border-radius: 8px;
-    display: none;
-}
-
-.form-feedback.success {
-    display: block;
-    background: rgba(16, 185, 129, 0.1);
-    border: 1px solid rgba(16, 185, 129, 0.2);
-    color: var(--accent-emerald);
-}
-
-.form-feedback.error {
-    display: block;
-    background: rgba(239, 68, 68, 0.1);
-    border: 1px solid rgba(239, 68, 68, 0.2);
-    color: hsl(0, 84%, 60%);
 }
 
 /* ==========================================================================
