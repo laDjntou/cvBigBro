@@ -1070,6 +1070,59 @@ section {
 .lang-circular-progress[data-percent="100"] { --percent: 100; }
 .lang-circular-progress[data-percent="85"] { --percent: 85; }
 .lang-circular-progress[data-percent="60"] { --percent: 60; }
+/* ==========================================================================
+   Hobbys Section
+   ========================================================================== */
+.hobbys-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+}
+
+.hobby-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 2.5rem 2rem;
+}
+
+.hobby-icon-box {
+    width: 60px;
+    height: 60px;
+    border-radius: 12px;
+    background: var(--gradient-primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+    box-shadow: 0 4px 15px rgba(99, 102, 241, 0.2);
+    transition: transform var(--transition-fast);
+}
+
+.hobby-card:hover .hobby-icon-box {
+    transform: scale(1.1) rotate(5deg);
+}
+
+.hobby-name {
+    font-family: var(--font-heading);
+    font-size: 1.25rem;
+    font-weight: 700;
+    color: var(--text-primary);
+}
+
+@media (max-width: 1024px) {
+    .hobbys-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .hobbys-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
 /* ==========================================================================
    Contact Section

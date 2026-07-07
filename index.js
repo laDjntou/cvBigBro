@@ -14,14 +14,15 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // Nav links
         const navs = document.querySelectorAll('.nav-menu a');
-        if (navs.length >= 7) {
+        if (navs.length >= 8) {
             navs[0].textContent = isDe ? 'Home' : 'Home';
             navs[1].textContent = isDe ? 'Über mich' : 'About Me';
             navs[2].textContent = isDe ? 'Erfahrung' : 'Experience';
             navs[3].textContent = isDe ? 'Projekte' : 'Projects';
             navs[4].textContent = isDe ? 'Ausbildung' : 'Education';
             navs[5].textContent = isDe ? 'Kompetenzen' : 'Skills';
-            navs[6].textContent = isDe ? 'Kontakt' : 'Contact';
+            navs[6].textContent = isDe ? 'Hobbys' : 'Hobbies';
+            navs[7].textContent = isDe ? 'Kontakt' : 'Contact';
         }
         
         // Hero
@@ -277,6 +278,23 @@ document.addEventListener('DOMContentLoaded', () => {
             langCards[2].querySelector('.lang-info p').textContent = isDe ? 'Gute Kenntnisse / B1 Niveau' : 'Good Knowledge / B1 Level';
         }
 
+        // Hobbys Section
+        const hobbysSubtitle = document.getElementById('hobbys-subtitle');
+        if (hobbysSubtitle) hobbysSubtitle.textContent = isDe ? 'Freizeit' : 'Leisure';
+        
+        const hobbysTitle = document.getElementById('hobbys-title');
+        if (hobbysTitle) hobbysTitle.textContent = isDe ? 'Hobbys' : 'Hobbies';
+        
+        const hobbyNames = document.querySelectorAll('.hobby-name');
+        if (hobbyNames.length >= 6) {
+            hobbyNames[0].textContent = isDe ? 'Fussball begeistert' : 'Football Enthusiast';
+            hobbyNames[1].textContent = isDe ? 'Schach spielen' : 'Playing Chess';
+            hobbyNames[2].textContent = isDe ? 'Bücher lesen' : 'Reading Books';
+            hobbyNames[3].textContent = isDe ? 'Sport machen' : 'Doing Sports';
+            hobbyNames[4].textContent = isDe ? 'Neue Sprachen lernen' : 'Learning New Languages';
+            hobbyNames[5].textContent = isDe ? 'Videospiele spielen' : 'Playing Video Games';
+        }
+
         // Contact Section Header
         const contactSubtitle = document.querySelector('.contact-section .section-subtitle');
         if (contactSubtitle) contactSubtitle.textContent = isDe ? 'Kontakt' : 'Contact';
@@ -300,10 +318,11 @@ document.addEventListener('DOMContentLoaded', () => {
             '© 2026 Doryan Vianey Nana Nkadja. All rights reserved.';
         
         const footerLinks = document.querySelectorAll('.footer-link');
-        if (footerLinks.length >= 3) {
+        if (footerLinks.length >= 4) {
             footerLinks[0].textContent = isDe ? 'Home' : 'Home';
             footerLinks[1].textContent = isDe ? 'Über mich' : 'About Me';
-            footerLinks[2].textContent = isDe ? 'Kontakt' : 'Contact';
+            footerLinks[2].textContent = isDe ? 'Hobbys' : 'Hobbies';
+            footerLinks[3].textContent = isDe ? 'Kontakt' : 'Contact';
         }
     }
 
