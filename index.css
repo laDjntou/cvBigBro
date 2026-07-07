@@ -1452,7 +1452,7 @@ section {
         width: 75mm !important;
         background: #111827 !important; /* Dark slate gray */
         color: #ffffff !important;
-        padding: 12mm 7mm !important;
+        padding: 10mm 6mm !important;
         box-sizing: border-box !important;
         height: 100% !important;
         display: flex !important;
@@ -1582,7 +1582,7 @@ section {
     
     /* Sections content */
     .print-section {
-        padding: 8mm 10mm !important;
+        padding: 6mm 10mm !important;
         flex-grow: 1 !important;
     }
     
@@ -1597,7 +1597,7 @@ section {
         font-size: 11pt !important;
         font-weight: 600 !important;
         margin-top: 0 !important;
-        margin-bottom: 6mm !important;
+        margin-bottom: 4mm !important;
         text-transform: uppercase !important;
         letter-spacing: 0.5px !important;
     }
@@ -1605,7 +1605,7 @@ section {
     .print-timeline {
         display: flex !important;
         flex-direction: column !important;
-        gap: 5mm !important;
+        gap: 3.5mm !important;
     }
     
     .print-timeline-item {
