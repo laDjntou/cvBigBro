@@ -1412,3 +1412,262 @@ section {
     opacity: 1;
     transform: translateY(0);
 }
+
+/* ==========================================================================
+   Print Stylesheet (Export to PDF)
+   ========================================================================== */
+.print-cv-container {
+    display: none;
+}
+
+@media print {
+    /* Hide screen elements */
+    body > *:not(.print-cv-container) {
+        display: none !important;
+    }
+    
+    .print-cv-container.active {
+        display: block !important;
+        width: 100% !important;
+        background: #ffffff !important;
+        color: #1a202c !important;
+        font-family: 'Plus Jakarta Sans', Arial, sans-serif !important;
+        margin: 0 !important;
+        padding: 0 !important;
+    }
+    
+    .print-page {
+        display: flex !important;
+        width: 210mm !important; /* A4 Width */
+        height: 297mm !important; /* A4 Height */
+        page-break-after: always !important;
+        box-sizing: border-box !important;
+        overflow: hidden !important;
+        background: #ffffff !important;
+        position: relative !important;
+    }
+    
+    /* Left dark sidebar */
+    .print-sidebar {
+        width: 75mm !important;
+        background: #111827 !important; /* Dark slate gray */
+        color: #ffffff !important;
+        padding: 12mm 7mm !important;
+        box-sizing: border-box !important;
+        height: 100% !important;
+        display: flex !important;
+        flex-direction: column !important;
+    }
+    
+    /* Circular profile photo */
+    .print-profile-img-container {
+        width: 45mm !important;
+        height: 45mm !important;
+        border-radius: 50% !important;
+        border: 3px solid #083e8c !important; /* Blue border */
+        overflow: hidden !important;
+        margin: 0 auto 8mm auto !important;
+    }
+    
+    .print-profile-img {
+        width: 100% !important;
+        height: 100% !important;
+        object-fit: cover !important;
+    }
+    
+    .print-sidebar-title {
+        font-family: 'Outfit', Arial, sans-serif !important;
+        font-size: 13pt !important;
+        font-weight: 600 !important;
+        text-transform: uppercase !important;
+        border-bottom: 2px solid #3b82f6 !important;
+        padding-bottom: 3px !important;
+        margin-top: 5mm !important;
+        margin-bottom: 4mm !important;
+        color: #ffffff !important;
+        letter-spacing: 0.5px !important;
+    }
+    
+    .print-sidebar-text {
+        font-size: 9pt !important;
+        line-height: 1.45 !important;
+        color: #cbd5e1 !important;
+        margin-bottom: 6mm !important;
+        text-align: left !important;
+    }
+    
+    .print-contact-info {
+        margin-top: auto !important;
+    }
+    
+    .print-contact-item {
+        margin-bottom: 3.5mm !important;
+        font-size: 8.5pt !important;
+    }
+    
+    .print-contact-label {
+        font-weight: bold !important;
+        color: #94a3b8 !important;
+        display: block !important;
+        margin-bottom: 0.5mm !important;
+        font-size: 8pt !important;
+    }
+    
+    .print-contact-value {
+        color: #ffffff !important;
+        word-break: break-word !important;
+    }
+    
+    .print-sidebar-list {
+        list-style: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+    }
+    
+    .print-sidebar-list li {
+        font-size: 9.5pt !important;
+        color: #cbd5e1 !important;
+        margin-bottom: 2.5mm !important;
+        padding-left: 3.5mm !important;
+        position: relative !important;
+    }
+    
+    .print-sidebar-list li::before {
+        content: "•" !important;
+        position: absolute !important;
+        left: 0 !important;
+        color: #3b82f6 !important;
+    }
+    
+    /* Right main content column */
+    .print-main {
+        width: 135mm !important;
+        padding: 0 !important;
+        display: flex !important;
+        flex-direction: column !important;
+        box-sizing: border-box !important;
+    }
+    
+    /* Top blue header banner */
+    .print-header-banner {
+        background: #083e8c !important; /* Dark blue background */
+        color: #ffffff !important;
+        padding: 12mm 10mm !important;
+        box-sizing: border-box !important;
+        display: flex !important;
+        flex-direction: column !important;
+        justify-content: center !important;
+        height: 55mm !important;
+    }
+    
+    .print-name {
+        font-family: 'Outfit', Arial, sans-serif !important;
+        font-size: 24pt !important;
+        font-weight: 800 !important;
+        line-height: 1.1 !important;
+        margin: 0 !important;
+        letter-spacing: 0.5px !important;
+    }
+    
+    .print-title {
+        font-family: 'Outfit', Arial, sans-serif !important;
+        font-size: 11pt !important;
+        font-weight: 600 !important;
+        color: #93c5fd !important;
+        margin-top: 2.5mm !important;
+        margin-bottom: 0 !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.8px !important;
+    }
+    
+    /* Sections content */
+    .print-section {
+        padding: 8mm 10mm !important;
+        flex-grow: 1 !important;
+    }
+    
+    /* Pill shaped header for experiences / education */
+    .print-section-header {
+        font-family: 'Outfit', Arial, sans-serif !important;
+        background: #083e8c !important;
+        color: #ffffff !important;
+        display: inline-block !important;
+        padding: 2.5mm 8mm !important;
+        border-radius: 20px !important;
+        font-size: 11pt !important;
+        font-weight: 600 !important;
+        margin-top: 0 !important;
+        margin-bottom: 6mm !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.5px !important;
+    }
+    
+    .print-timeline {
+        display: flex !important;
+        flex-direction: column !important;
+        gap: 5mm !important;
+    }
+    
+    .print-timeline-item {
+        position: relative !important;
+        padding-left: 5mm !important;
+        border-left: 2px solid #e2e8f0 !important;
+    }
+    
+    .print-timeline-item::before {
+        content: "" !important;
+        position: absolute !important;
+        left: -4px !important;
+        top: 2px !important;
+        width: 6px !important;
+        height: 6px !important;
+        border-radius: 50% !important;
+        background: #083e8c !important;
+        border: 2px solid #ffffff !important;
+    }
+    
+    .print-item-date {
+        font-size: 8.5pt !important;
+        font-weight: bold !important;
+        color: #083e8c !important;
+        display: block !important;
+        margin-bottom: 1mm !important;
+    }
+    
+    .print-item-title {
+        font-size: 10.5pt !important;
+        font-weight: 700 !important;
+        color: #1e293b !important;
+        margin: 0 0 1mm 0 !important;
+        line-height: 1.25 !important;
+    }
+    
+    .print-item-sub {
+        font-size: 9pt !important;
+        font-weight: 600 !important;
+        color: #475569 !important;
+        margin: 0 0 1mm 0 !important;
+    }
+    
+    .print-item-desc {
+        font-size: 8pt !important;
+        line-height: 1.35 !important;
+        color: #64748b !important;
+        margin: 0 !important;
+    }
+    
+    /* Force page properties */
+    @page {
+        size: A4 portrait !important;
+        margin: 0 !important;
+    }
+    
+    * {
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+        text-shadow: none !important;
+        box-shadow: none !important;
+        animation: none !important;
+        transition: none !important;
+    }
+}

@@ -43,8 +43,8 @@ document.addEventListener('DOMContentLoaded', () => {
         const heroBtn1 = document.querySelector('.hero-ctas a[href="#about"]');
         if (heroBtn1) heroBtn1.textContent = isDe ? 'Mehr über mich' : 'More About Me';
         
-        const heroBtn2 = document.querySelector('.hero-ctas a[href="#contact"]');
-        if (heroBtn2) heroBtn2.textContent = isDe ? 'Kontakt aufnehmen' : 'Get In Touch';
+        const heroBtn2 = document.getElementById('download-portfolio-btn');
+        if (heroBtn2) heroBtn2.textContent = isDe ? 'Portfolio herunterladen' : 'Download Portfolio';
         
         // Visual card
         const cardTitle = document.querySelector('.project-title');
@@ -324,6 +324,19 @@ document.addEventListener('DOMContentLoaded', () => {
             footerLinks[2].textContent = isDe ? 'Hobbys' : 'Hobbies';
             footerLinks[3].textContent = isDe ? 'Kontakt' : 'Contact';
         }
+
+        // Print CV active language toggle
+        const printDe = document.getElementById('print-cv-container-de');
+        const printEn = document.getElementById('print-cv-container-en');
+        if (printDe && printEn) {
+            if (isDe) {
+                printDe.classList.add('active');
+                printEn.classList.remove('active');
+            } else {
+                printDe.classList.remove('active');
+                printEn.classList.add('active');
+            }
+        }
     }
 
     // Initialize Language
@@ -334,6 +347,17 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('lang', currentLang);
         updateLanguage(currentLang);
     });
+
+    // ==========================================================================
+    // PDF Print/Download Listener for Portfolio
+    // ==========================================================================
+    const downloadPortfolioBtn = document.getElementById('download-portfolio-btn');
+    if (downloadPortfolioBtn) {
+        downloadPortfolioBtn.addEventListener('click', (e) => {
+            e.preventDefault();
+            window.print();
+        });
+    }
 
     // ==========================================================================
     // Theme Toggle (Dark / Light Mode)
